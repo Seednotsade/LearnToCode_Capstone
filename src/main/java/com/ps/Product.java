@@ -15,7 +15,12 @@ public class Product {
         this.count = 1;
     }
 
-    public Product(Product p) {
+    public Product(Product other) {
+        this.sku = other.sku;
+        this.name = other.name;
+        this.price = other.price;
+        this.department = other.department;
+        this.count = other.count;
     }
 
     public String getSku() {

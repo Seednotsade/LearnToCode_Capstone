@@ -16,7 +16,7 @@ public class HelperMethods {
 
     public static ArrayList<Product> getInventory() {
         ArrayList<Product> products = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader("products.csv"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("products.csv/products.csv"))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split("\\|");
